@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(95, 158, 160, 0.392);
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(217, 214, 214, 0.475);
+  transition: 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 3px solid rgb(101, 101, 101);
+  gap: 10px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.left > .case-number {
+  font-size: 13px;
+}
+.left > #badge {
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.right {
+  font-size: 12px;
+}
+.bottom {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bottom > .price {
+  align-self: flex-end;
+}
+.approved {
+  background-color: green;
+  color: white;
+}
+.pending {
+  background-color: orangered;
+  color: white;
+}
+.completed {
+  background-color: blue;
+  color: white;
+}
+.cancelled {
+  background-color: red;
+  color: black;
+}
